@@ -1,0 +1,14 @@
+.header__burger-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5px;
+}
+
+@media screen and (min-width: 769px) {
+  .header__burger-button {
+  display: none;
+  }
+}

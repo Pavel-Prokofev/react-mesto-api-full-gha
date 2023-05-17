@@ -1,0 +1,12 @@
+.gallery__card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: 282px;
+  object-fit: cover;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

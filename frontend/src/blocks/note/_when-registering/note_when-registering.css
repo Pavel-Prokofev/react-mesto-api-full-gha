@@ -1,0 +1,16 @@
+.note_when-registering {
+  margin: 20px auto 0;
+  max-width: 260px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 426px) {
+  .note_when-registering {
+    margin-top: 15px;
+    max-width: 358px;
+  }
+}

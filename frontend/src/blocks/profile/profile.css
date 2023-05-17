@@ -1,0 +1,19 @@
+.profile {
+ 
+  padding-bottom: 36px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+@media screen and (min-width: 769px) {
+  .profile {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 51px;
+    text-align: start;
+  }
+}
+

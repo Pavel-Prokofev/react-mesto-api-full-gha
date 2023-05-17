@@ -1,0 +1,10 @@
+.gallery__card-trash {
+  padding: 0;
+  border: none;
+  background: transparent url('../../../images/trash.svg') no-repeat center / cover;
+  width: 18px;
+  height: 19px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

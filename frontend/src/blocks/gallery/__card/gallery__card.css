@@ -1,0 +1,9 @@
+.gallery__card {
+  background-color: #fff;
+  max-width: 282px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

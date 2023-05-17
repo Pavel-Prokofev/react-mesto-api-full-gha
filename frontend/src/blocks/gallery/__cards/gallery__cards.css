@@ -1,0 +1,23 @@
+.gallery__cards {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  display: grid;
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 17px;
+}
+
+@media screen and (min-width: 426px) {
+  .gallery__cards {
+    grid-template-columns: repeat(2, fit-content(282px));
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .gallery__cards {
+    grid-template-columns: repeat(3, fit-content(282px));
+  }
+}

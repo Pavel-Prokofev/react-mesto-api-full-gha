@@ -1,0 +1,5 @@
+.header__burger-button_off {
+  background: transparent url('../../../../images/burger_line.svg') no-repeat center / cover;
+  width: 24px;
+  height: 3px;
+}

@@ -1,0 +1,10 @@
+.page {
+  margin: 0 auto;
+  max-width: 880px;
+  font-family: 'Inter', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%; 
+}

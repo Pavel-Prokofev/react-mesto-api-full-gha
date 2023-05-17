@@ -1,0 +1,18 @@
+.profile__bio {
+  display: flex;
+  max-width: 100%;
+  margin-left: 28px;
+}
+
+@media screen and (min-width: 769px) {
+  .profile__bio {
+    margin-left: 0;
+    max-width: calc(100vw - 150px - 150px - 80px);
+  }
+}
+
+@media screen and (min-width: 881px) {
+  .profile__bio {
+    max-width: 530px;
+  }
+}

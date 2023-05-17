@@ -1,0 +1,10 @@
+.title_popup {
+  padding-bottom: 72px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 426px) {
+  .title_popup {
+    padding-bottom: 47px;
+  }
+}

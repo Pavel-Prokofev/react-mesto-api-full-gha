@@ -1,0 +1,9 @@
+.form__text-box-error {
+  height: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #f00;
+  display: block;
+  overflow: hidden;
+}

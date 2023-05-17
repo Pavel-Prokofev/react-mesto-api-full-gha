@@ -1,0 +1,12 @@
+.form__personal-data {
+  all: unset;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 426px) {
+  .form__personal-data {
+    padding-bottom: 18px;
+  }
+}

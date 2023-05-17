@@ -1,0 +1,17 @@
+.form__submit-button_authentication {
+  color: #000;
+  font-size: 16px;
+  background-color: #fff;
+  margin-top: 128px;
+}
+
+@media screen and (min-width: 426px) {
+  .form__submit-button_authentication {
+    margin-bottom: 0;
+    margin-top: 168px;
+  }
+}
+
+.form__submit-button_authentication:hover {
+  opacity: 0.85;
+}

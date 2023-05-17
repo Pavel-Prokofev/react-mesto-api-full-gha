@@ -1,0 +1,22 @@
+.popup__content {
+  margin-left: 5.9375%;
+  margin-right: 5.9375%;
+  max-width: 430px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 22px 0;
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 487px) {
+  .popup__content {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 36px 36px 0;
+  }
+}

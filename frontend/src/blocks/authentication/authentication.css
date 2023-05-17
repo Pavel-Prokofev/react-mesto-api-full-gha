@@ -1,0 +1,11 @@
+.authentication {
+margin: 40px auto 0;
+max-width: 260px;
+}
+
+@media screen and (min-width: 426px) {
+  .authentication {
+    margin-top: 60px;
+    max-width: 358px;
+  }
+}

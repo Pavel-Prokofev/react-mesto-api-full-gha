@@ -1,0 +1,12 @@
+.title_authentication {
+  padding-bottom: 40px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 426px) {
+  .title_authentication {
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,33 @@
+.form__submit-button {
+  all: unset;
+  font-family: 'Inter', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  background-color: #000;
+  border-radius: 2px;
+  box-sizing: border-box;
+  min-height: 46px;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 426px) {
+  .form__submit-button {
+    font-size: 18px;
+    margin-bottom: 7px;
+    min-height: 50px;
+  }
+}
+
+.form__submit-button:hover {
+  opacity: 0.8;
+}

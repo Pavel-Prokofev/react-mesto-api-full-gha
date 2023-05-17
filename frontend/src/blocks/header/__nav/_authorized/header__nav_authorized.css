@@ -1,0 +1,23 @@
+.header__nav_authorized {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 27px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  font-size: 0;
+  gap: 18px;
+  padding: 12px 0 40px;
+}
+
+@media screen and (min-width: 769px) {
+  .header__nav_authorized {
+    justify-content: end;
+    text-align: end;
+    width: 70%; 
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    flex-direction: row;
+    gap: 24px;
+  }
+}

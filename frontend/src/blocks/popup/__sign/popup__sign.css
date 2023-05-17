@@ -1,0 +1,11 @@
+.popup__sign {
+  margin: 0 auto 40px;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+@media screen and (min-width: 426px) {
+  .popup__sign {
+    margin-bottom: 32px;
+  }
+}

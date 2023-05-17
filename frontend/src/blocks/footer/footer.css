@@ -1,0 +1,18 @@
+.footer {
+  padding-bottom: 36px;
+  padding-left: 5.9375%;
+  padding-right: 5.9375%;
+}
+
+@media screen and (min-width: 321px) {
+  .footer {
+    padding-left: calc(27.9px - 2.79vw);
+    padding-right: calc(27.9px - 2.79vw);
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .footer {
+    padding-bottom: 60px;
+  }
+}
