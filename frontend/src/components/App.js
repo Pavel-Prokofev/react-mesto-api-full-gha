@@ -233,7 +233,6 @@ function App() {
   };
 
   const handleUserRegister = (email, password) => {
-    console.log(email, password);
     setIsResetForm(false);
     if (email && password) {
       setIsAction(true);
@@ -260,9 +259,6 @@ function App() {
       setIsAction(true);
       api.userAuthenticate(email, password)
         .then((res) => {
-          // console.log(res);
-          // console.log(userEmail);
-          // console.log(currentUser);
           if (res.token) {
             localStorage.setItem('jwt', res.token);
             setIsResetForm(true);
@@ -289,8 +285,6 @@ function App() {
     closeAllPopups();
     setUserEmail('');
     setCurrentUser({});
-    // console.log(userEmail);
-    // console.log(currentUser);
   };
 
   return (

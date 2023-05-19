@@ -1,5 +1,12 @@
+
+const configApi = {
+  url: 'http://localhost:3000',
+};
+
+
+
 class Api {
-  constructor({ url, urlAuthentication, headers }) {
+  constructor({ url, headers }) {
     this._url = url;
     this._headers = headers;
   };
@@ -13,7 +20,10 @@ class Api {
 
   getUserInfo() {
     return fetch(`${this._url}/users/me`, {
-      headers: this._headers
+      headers: {
+        'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json'
+      }
     })
       .then((res) => this._checkResponse(res))
   };
@@ -21,7 +31,10 @@ class Api {
   patchUserInfo({ name, about }) {
     return fetch(`${this._url}/users/me`, {
       method: 'PATCH',
-      headers: this._headers,
+      headers: {
+        'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         name: name,
         about: about
@@ -30,10 +43,13 @@ class Api {
       .then((res) => this._checkResponse(res))
   };
 
-  patchUserAvatar({ avatar }) {
+  patchUserAvatar({ avatar },) {
     return fetch(`${this._url}/users/me/avatar`, {
       method: 'PATCH',
-      headers: this._headers,
+      headers: {
+        'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         avatar: avatar
       })
@@ -43,7 +59,10 @@ class Api {
 
   getAllCards() {
     return fetch(`${this._url}/cards`, {
-      headers: this._headers
+      headers: {
+        'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json'
+      }
     })
       .then((res) => this._checkResponse(res))
   };
@@ -51,7 +70,10 @@ class Api {
   postNewCard({ name, link }) {
     return fetch(`${this._url}/cards`, {
       method: 'POST',
-      headers: this._headers,
+      headers: {
+        'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         name: name,
         link: link
@@ -63,7 +85,10 @@ class Api {
   putCardLike(cardId) {
     return fetch(`${this._url}/cards/${cardId}/likes`, {
       method: 'PUT',
-      headers: this._headers
+     headers: {
+      'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+      'Content-Type': 'application/json'
+    }
     })
       .then((res) => this._checkResponse(res))
   };
@@ -71,7 +96,10 @@ class Api {
   delCardLike(cardId) {
     return fetch(`${this._url}/cards/${cardId}/likes`, {
       method: 'DELETE',
-      headers: this._headers
+      headers: {
+        'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json'
+      }
     })
       .then((res) => this._checkResponse(res))
   };
@@ -79,7 +107,10 @@ class Api {
   delCard(cardId) {
     return fetch(`${this._url}/cards/${cardId}`, {
       method: 'DELETE',
-      headers: this._headers
+     headers: {
+      'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+      'Content-Type': 'application/json'
+    }
     })
       .then((res) => this._checkResponse(res))
   };
@@ -115,24 +146,15 @@ class Api {
   checkJwt() {
     return fetch(`${this._url}/users/me`, {
       method: 'GET',
-      // headers: {
-      //   'Content-Type': 'application/json',
-      //   'Authorization': `Bearer ${jvt}`
-      // },
-     headers: this._headers
+      headers: {
+        'authorization': `Bearer ${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json'
+      }
     })
       .then((res) => this._checkResponse(res))
   };
 
 }
-
-const configApi = {
-  url: 'http://localhost:3005',
-  headers: {
-    'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
-    'Content-Type': 'application/json'
-  }
-};
 
 const api = new Api(configApi);
 

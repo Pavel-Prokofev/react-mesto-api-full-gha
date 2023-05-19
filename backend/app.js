@@ -14,7 +14,7 @@ const cardsRouter = require('./routes/cards');
 const auth = require('./middlewares/auth');
 const { allowedCors } = require('./middlewares/allowedCors');
 
-const { PORT = 3005 } = process.env;
+const { PORT = 3000 } = process.env;
 
 const app = express();
 
