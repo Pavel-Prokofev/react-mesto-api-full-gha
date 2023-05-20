@@ -1,5 +1,7 @@
 const jwt = require('jsonwebtoken');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
+
 const { orFailFunction } = require('../utils/errorsHandler');
 
 module.exports = (req, res, next) => {
@@ -12,7 +14,7 @@ module.exports = (req, res, next) => {
     let payload;
 
     try {
-      payload = jwt.verify(token, 'some-superSecret-key');
+      payload = jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : 'some-superSecret-key');
       req.user = payload;
       next();
     } catch (error) {
