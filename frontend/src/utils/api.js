@@ -1,6 +1,6 @@
 
 const configApi = {
-  url: 'http://api.mesto.kirgadan.nomoredomains.monster',
+  url: 'https://api.mesto.kirgadan.nomoredomains.monster',
 };
 
 
