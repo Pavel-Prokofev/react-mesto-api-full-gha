@@ -25,10 +25,8 @@ mongoose.connect('mongodb://127.0.0.1/mestodb')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// eslint-disable-next-line consistent-return
 app.use((req, res, next) => {
   const { origin } = req.headers;
-  console.log(origin);
   if (allowedCors.includes(origin)) {
     res.header('Access-Control-Allow-Origin', origin);
     const { method } = req;
@@ -40,7 +38,7 @@ app.use((req, res, next) => {
       return res.end();
     }
   }
-  next();
+  return next();
 });
 
 app.use(requestLogger);
