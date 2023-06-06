@@ -51,9 +51,8 @@ app.get('/crash-test', () => {
 });
 
 app.use('/', usersRouterSign);
-app.use(auth);
-app.use('/users', usersRouter);
-app.use('/cards', cardsRouter);
+app.use('/users', auth, usersRouter);
+app.use('/cards', auth, cardsRouter);
 app.use('*', (req, res, next) => {
   next(orFailFunction('NotFoundUrl'));
 });
