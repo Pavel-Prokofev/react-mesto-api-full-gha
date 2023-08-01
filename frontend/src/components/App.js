@@ -138,7 +138,7 @@ function App() {
   }, [loggedIn]);
 
   const checkUserLike = (card) => {
-    return card.likes.some(like => like === currentUser._id)
+    return card.likes.some(like => like === currentUser._id);
   };
 
   const handleCardLike = (card) => {
