@@ -18,9 +18,9 @@ const {
   userAvatarChangeValidation,
 } = require('../middlewares/validationJoi');
 
-usersRouterSign.post('/signup', createUserValidation, createUser);
+usersRouterSign.post('signup', createUserValidation, createUser);
 
-usersRouterSign.post('/signin', loginValidation, login);
+usersRouterSign.post('signin', loginValidation, login);
 
 usersRouter.get('/', returnAllUsers);
 
