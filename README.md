@@ -6,7 +6,7 @@
 
 ## Ссылки на проект
 
-IP  84.201.131.51
+IP  51.250.70.254
 
 Frontend  https://mesto.kirgadan.nomoredomains.monster
 

@@ -15,7 +15,7 @@ const cardsRouter = require('./routes/cards');
 const auth = require('./middlewares/auth');
 const { allowedCors } = require('./middlewares/allowedCors');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3001 } = process.env;
 
 const app = express();
 
@@ -53,7 +53,7 @@ app.get('/crash-test', () => {
 app.use('/', usersRouterSign);
 app.use('/users', auth, usersRouter);
 app.use('/cards', auth, cardsRouter);
-app.use('*', (req, res, next) => {
+app.use('*', auth, (req, res, next) => {
   next(orFailFunction('NotFoundUrl'));
 });
 

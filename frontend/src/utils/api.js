@@ -3,12 +3,9 @@ const configApi = {
   url: 'https://api.mesto.kirgadan.nomoredomains.monster',
 };
 
-
-
 class Api {
   constructor({ url, headers }) {
     this._url = url;
-    this._headers = headers;
   };
 
   _checkResponse(res) {
@@ -159,4 +156,3 @@ class Api {
 const api = new Api(configApi);
 
 export default api;
-
