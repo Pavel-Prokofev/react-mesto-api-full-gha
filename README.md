@@ -8,6 +8,8 @@
 
 IP  51.250.70.254
 
-Frontend  https://mesto.kirgadan.nomoredomains.monster
+Frontend  ~~https://mesto.kirgadan.nomoredomains.monster~~
+**Временно недоступен в связи с переездом на другой хост**
 
-Backend  https://api.mesto.kirgadan.nomoredomains.monster
+Backend  ~~https://api.mesto.kirgadan.nomoredomains.monster~~
+**Временно недоступен в связи с переездом на другой хост**
